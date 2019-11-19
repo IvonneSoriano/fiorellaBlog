@@ -87,6 +87,7 @@ $(document).ready(function () {
       });
       $('.toggle-button').click(function(){
         $('.toggle-button').toggleClass('active');
+        $('body').toggleClass('menu-open');
         if($('.toggle-button').hasClass('active')){
             // animacionNetworks();
             $('.main-menu').addClass('active');

@@ -9,6 +9,9 @@
   text-decoration: none;
   list-style: none; }
 
+body.menu-open {
+  overflow: hidden; }
+
 h1,
 h2,
 h3 {
