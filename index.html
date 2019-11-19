@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Prueba de flores</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+      <header>
+          <div class="toggle-button" onclick="animacionNetworks()">
+              <span class="line1"></span>
+          </div>
+        </header>
+        <!-- M E N U  -->
+        <div class="main-menu">
+          <div class="row">
+          <div class="brand-info">
+              <div class="content">
+            <div class="logo">
+                  <img src="img/logo.png" alt="">
+              </div>
+              <p class="close-submenu">Back</p>
+            </div>
+            <div class="social-networks-menu">
+                <!-- icon -->
+                <span>
+                  <a href="#">
+                    <img src="img/icons/facebook-logo.svg" alt="" />
+                  </a>
+                </span>
+
+                <!-- icon -->
+                <span>
+                  <a href="#">
+                    <img src="img/icons/twitter.svg" alt="" />
+                  </a>
+                </span>
+
+                <!-- icon -->
+                <span>
+                  <a href="#">
+                    <img src="img/icons/instagram.svg" alt="" />
+                  </a>
+                </span>
+
+                <!-- icon -->
+                <span>
+                  <a href="#">
+                    <img src="img/icons/pinterest-social-logo.svg" alt="" />
+                  </a>
+                </span>
+              </div>
+          </div>
+          <div class="nav">
+              <p class="close-submenu">Back</p>
+            <div class="content">
+              <nav class="main-nav">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li class="hasSubmenu" >
+                    <a href="#">Blog</a>
+                    <button class="show-submenu">
+                    <span>
+                    </span>
+                  </button>
+                  </li>
+                  <li>
+                      <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                      </li>
+              </nav>
+           
+              <nav class="submenu">
+                <li>
+                  <a href="#">Fashion</a>
+                </li>
+                <li>
+                  <a href="#">Travel</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- MENU ENDS -->
+    <div class="wrapper">
+      
+        <div class="logo-header">
+            <img src="img/logo.png" alt="">
+          </div>
+      <div class="container-custom">
+        <div class="slider-section">
+          <div class="row">
+            <!-- The global navigation button -->
+            <div class="next-button-swiper">
+              Next slide
+              <span><img src="img/icons/right-arrow.svg" alt=""/></span>
+            </div>
+
+           
+            <!-- The pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- image-zone beggins -->
+            <div class=" image-zone" id="scene">
+              <!-- main-swiper beggins -->
+              <div class="main-swiper swiper-container" data-depth="0.2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div>
+                      <img src="img/flor1.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div>
+                      <img src="img/flor5.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div>
+                      <img src="img/flor4.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- main-swiper ends -->
+              <!-- secundary-swiper beggins -->
+              <div class="secundary-swiper swiper-container" data-depth="0.1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div>
+                      <img src="img/flor5.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div>
+                      <img src="img/flor4.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div>
+                      <img src="img/flor1.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- secundary-swiper ends -->
+            </div>
+            <!--image-zone ends -->
+            <!-- text-zone beggins     -->
+            <div class=" text-zone">
+              <!-- title-swiper beggins -->
+              <div class="title-swiper swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <p class="hashtag">Nature</p>
+                    <h2>peachpuff Flowers</h2>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="hashtag">Skin care</p>
+                    <h2>Sun, Rise and Shine</h2>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="hashtag">Girly</p>
+                    <h2>Lovely moments</h2>
+                  </div>
+                </div>
+              </div>
+              <!-- title-swiper ends -->
+              <!-- number-swiper beggins -->
+              <div class="number-swiper swiper-container">
+                <div class="static-zero">0</div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><span>1</span></div>
+                  <div class="swiper-slide"><span>2</span></div>
+                  <div class="swiper-slide"><span>3</span></div>
+                </div>
+              </div>
+              <!-- number-swiper ends -->
+            </div>
+            <!-- text-zone ends -->
+          </div>
+          <!-- row ends -->
+        </div>
+
+        <!-- Slider section ends -->
+
+        <section class="about-section">
+          <div class="row">
+            <div class="images-area">
+              <div class="social-networks-widget">
+                <a href="#"
+                  ><div class="item">
+                    <img src="img/icons/facebook-logo.svg" alt="" />
+                  </div>
+                </a>
+                <a href="#"
+                  ><div class="item">
+                    <img src="img/icons/instagram.svg" alt="" />
+                  </div>
+                </a>
+                <a href="#"
+                  ><div class="item">
+                    <img src="img/icons/twitter.svg" alt="" />
+                  </div>
+                </a>
+                <a href="#"
+                  ><div class="item">
+                    <img src="img/icons/pinterest-social-logo.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="image-vertical">
+                <!-- <img src="img/girl1.jpg" alt=""> -->
+              </div>
+              <div class="image-horizontal">
+                <!-- <img src="img/girl2.jpg" alt=""> -->
+              </div>
+            </div>
+            <!-- images area ends -->
+            <div class="info-about">
+              <div class="titles">
+                <p class="hashtag">ABOUT</p>
+                <h2>A little about me</h2>
+                <hr />
+              </div>
+              <div class="to-right">
+                <p class="info">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Eius, reiciendis sint, odit minus dolores, molestiae cum
+                  fugiat eligendi dolorem animi asperiores dignissimos mollitia
+                  pariatur facilis eos ab ratione. Autem, aliquam!
+                </p>
+                <div class="btn-container">
+                    <a href="#" class="btn">
+                      <!-- Read more -->
+                      <span class="hover"></span>
+                      <span class="text-inside">Discover</span>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            <!-- info about ends -->
+          </div>
+        </section>
+        <!-- about section ends -->
+
+        <!-- blog section beggins -----1-----  -->
+        <section class="blog-item image-left">
+          <div class="row">
+            <div class="square"></div>
+            <div class="image-container">
+              <p class="date">April 05, 2019.</p>
+              <div class="contai">
+                <a href="#" style="background-image: url(img/flor6.jpg)"></a>
+                <div class="social-networks-widget">
+                  <a href="#"
+                    ><div class="item">
+                      <img src="img/icons/facebook-logo.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#"
+                    ><div class="item">
+                      <img src="img/icons/instagram.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#"
+                    ><div class="item">
+                      <img src="img/icons/twitter.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#"
+                    ><div class="item">
+                      <img src="img/icons/pinterest-social-logo.svg" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="text-container">
+              <div class="titles">
+                <p class="hashtag">Travel</p>
+                <h3>The best flowers in the world</h3>
+                <hr />
+              </div>
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+                  libero, aut facere voluptatibus voluptatum ?
+                </p>
+                <div class="btn-container">
+                    <a href="#" class="btn">
+                      <!-- Read more -->
+                      <span class="hover"></span>
+                      <span class="text-inside">Read more</span>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- blog-item section ends -->
+
+        <!-- blog-item section beggins -----2-----  -->
+        <section class="blog-item image-right">
+          <div class="row">
+            <div class="square"></div>
+            <div class="image-container">
+              <p class="date">March 01,2019</p>
+              <div class="contai">
+                <a href="#" style="background-image: url(img/flor7.jpg)"></a>
+                <div class="social-networks-widget">
+                  <a href="#"
+                    ><div class="item">
+                      <img src="img/icons/facebook-logo.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#"
+                    ><div class="item">
+                      <img src="img/icons/instagram.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#"
+                    ><div class="item">
+                      <img src="img/icons/twitter.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#"
+                    ><div class="item">
+                      <img src="img/icons/pinterest-social-logo.svg" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="text-container">
+              <div class="titles">
+                <p class="hashtag">Fashion</p>
+                <h3>What to take with you when traveling?</h3>
+                <hr />
+              </div>
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+                  libero, aut facere voluptatibus voluptatum ?
+                </p>
+                <div class="btn-container">
+                    <a href="#" class="btn">
+                      <!-- Read more -->
+                      <span class="hover"></span>
+                      <span class="text-inside">Read more</span>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- blog-item section ends -->
+
+        <!-- blog-section starts -->
+        <section class="blog-section">
+          <div class="row">
+            <!-- blog-content starts -->
+            <div class="blog-content">
+              <div class="blog-item main-blog">
+                <div class="row">
+                  <div class="square"></div>
+                  <div class="image-container">
+                    <div class="contai">
+                      <a
+                        href="#"
+                        style="background-image: url(img/pareja.jpg)"
+                      ></a>
+                      <div class="social-networks-widget">
+                        <a href="#"
+                          ><div class="item">
+                            <img src="img/icons/facebook-logo.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#"
+                          ><div class="item">
+                            <img src="img/icons/instagram.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#"
+                          ><div class="item">
+                            <img src="img/icons/twitter.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#"
+                          ><div class="item">
+                            <img
+                              src="img/icons/pinterest-social-logo.svg"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-container">
+                    <div class="float-content">
+                      <div class="titles">
+                        <p class="hashtag">Fashion</p>
+                        <h3>The real and true love</h3>
+                        <hr />
+                      </div>
+                      <div class="content">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Unde libero, aut facere voluptatibus voluptatum
+                          ?
+                        </p>
+                        <div class="btn-container">
+                            <a href="#" class="btn">
+                              <!-- Read more -->
+                              <span class="hover"></span>
+                              <span class="text-inside">Read more</span>
+                            </a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- blog main ends -->
+
+              <!-- blog section beggins -----1-----  -->
+              <section class="blog-item image-left">
+                <div class="row">
+                  <div class="square"></div>
+                  <div class="image-container">
+                    <div class="contai">
+                      <a
+                        href="#"
+                        style="background-image: url(img/city.jpg)"
+                      ></a>
+                      <div class="social-networks-widget">
+                        <a href="#"
+                          ><div class="item">
+                            <img src="img/icons/facebook-logo.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#"
+                          ><div class="item">
+                            <img src="img/icons/instagram.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#"
+                          ><div class="item">
+                            <img src="img/icons/twitter.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#"
+                          ><div class="item">
+                            <img
+                              src="img/icons/pinterest-social-logo.svg"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-container">
+                    <div class="titles">
+                      <p class="hashtag">Fashion, Travel</p>
+                      <h3>Where to go on your free time?</h3>
+                    </div>
+                    <div class="content">
+                      <div class="btn-container">
+                      <a href="#" class="btn">
+                        <!-- Read more -->
+                        <span class="hover"></span>
+                        <span class="text-inside">Read more</span>
+                      </a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- blog-item section ends -->
+              <!-- blog section beggins -----1-----  -->
+              <section class="blog-item image-right">
+                <div class="row">
+                  <div class="square"></div>
+                  <div class="image-container">
+                    <div class="contai">
+                      <a
+                        href="#"
+                        style="background-image: url(img/spa.jpg)"
+                      ></a>
+                      <div class="social-networks-widget">
+                        <a href="#"
+                          ><div class="item">
+                            <img src="img/icons/facebook-logo.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#"
+                          ><div class="item">
+                            <img src="img/icons/instagram.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#"
+                          ><div class="item">
+                            <img src="img/icons/twitter.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#"
+                          ><div class="item">
+                            <img
+                              src="img/icons/pinterest-social-logo.svg"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-container">
+                    <div class="titles">
+                      <p class="hashtag">Fashion,Relax</p>
+                      <h3>The main benefits of the Yoga</h3>
+                    </div>
+                    <div class="content">
+                        <div class="btn-container">
+                            <a href="#" class="btn">
+                              <!-- Read more -->
+                              <span class="hover"></span>
+                              <span class="text-inside">Read more</span>
+                            </a>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- blog-item section ends -->
+              <!-- blog section beggins -----1-----  -->
+              <section class="blog-item image-left">
+                <div class="row">
+                  <div class="square"></div>
+                  <div class="image-container">
+                    <div class="contai">
+                      <a
+                        href="#"
+                        style="background-image: url(img/love.jpg)"
+                      ></a>
+                      <div class="social-networks-widget">
+                        <a href="#"
+                          ><div class="item">
+                            <img src="img/icons/facebook-logo.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#"
+                          ><div class="item">
+                            <img src="img/icons/instagram.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#"
+                          ><div class="item">
+                            <img src="img/icons/twitter.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#"
+                          ><div class="item">
+                            <img
+                              src="img/icons/pinterest-social-logo.svg"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-container">
+                    <div class="titles">
+                      <p class="hashtag">Travel, Love</p>
+                      <h3>Love and nature, love at first sight</h3>
+                    </div>
+                    <div class="content">
+                        <div class="btn-container">
+                            <a href="#" class="btn">
+                              <!-- Read more -->
+                              <span class="hover"></span>
+                              <span class="text-inside">Read more</span>
+                            </a>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- blog-item section ends -->
+              <!-- pagination section -->
+          <div class="pagination-section">
+            <ul class="row">
+              <li class="pagination prev disable" >
+                <a href="#"><</a>
+              </li>
+              <li class="pagination pag active">
+                <a href="#">1</a>
+              </li>
+              <li class="pagination pag">
+                <a href="#">2</a>
+              </li>
+              <li class="pagination pag">
+                <a href="#">3</a>
+              </li>
+              <li class="pagination Next">
+                <a href="#">></a>
+              </li>
+            </ul>
+          </div>
+          <!-- pagination section ends -->
+            </div>
+            <!-- blog-content ends -->
+            <!-- aside starts -->
+            <aside>
+              <!-- item 1 -->
+              <div class="item">
+                <h4>About me</h4>
+                <img src="img/girl3.jpg" alt="" />
+                <p class="caption">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  consequatur impedit veniam iste harum!
+                </p>
+              </div>
+
+              <!-- item 2 -->
+              <div class="item">
+                <h4>Search</h4>
+                <form class="search-form">
+                  <input
+                    type="search"
+                    name="search"
+                    id="search"
+                    placeholder="Buscar..."
+                    class="search-input"
+                  />
+                </form>
+              </div>
+
+              <!-- item 3 -->
+              <div class="item">
+                <h4>Subscribe and follow</h4>
+                <div class="social-networks-menu">
+                  <!-- icon -->
+                  <span>
+                    <a href="#">
+                      <img src="img/icons/facebook-logo.svg" alt="" />
+                    </a>
+                  </span>
+
+                  <!-- icon -->
+                  <span>
+                    <a href="#">
+                      <img src="img/icons/twitter.svg" alt="" />
+                    </a>
+                  </span>
+
+                  <!-- icon -->
+                  <span>
+                    <a href="#">
+                      <img src="img/icons/instagram.svg" alt="" />
+                    </a>
+                  </span>
+
+                  <!-- icon -->
+                  <span>
+                    <a href="#">
+                      <img src="img/icons/pinterest-social-logo.svg" alt="" />
+                    </a>
+                  </span>
+                </div>
+                <!-- social-networks-menu ends -->
+              </div>
+              <!-- item 4 -->
+              <div class="item postcard">
+                <img src="img/torre.jpg" alt="" />
+                <h4>Travel</h4>
+              </div>
+            </aside>
+            <!-- aside ends -->
+          </div>
+          <!-- row ends -->
+          
+        </section>
+        <!-- blog-section ends -->
+      </div>
+      <footer>
+        <p>Rights reserved &copy <span>Ivonne Soriano</span></p>
+      </footer>
+      <!-- container custom ends -->
+    </div>
+    <!-- Wrapper ends here -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
+    <script src="js/prueba.js"></script>
+    <script src="js/myjs.js"></script>
+  </body>
+</html>
