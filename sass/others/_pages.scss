@@ -359,89 +359,162 @@
 .blog-section {
     @include container();
     margin-bottom: 0;
-
+    .category-search{
+        border:1px solid $grey;
+        padding: 50px;
+        background: white;
+        margin-bottom: 100px;
+        text-align:center;
+        p{
+            color: $gray;
+        }
+        h2{
+            color: $pink-soft;
+            font-size: 50px;
+        }
+    }
     .row {
         justify-content: space-between;
     }
-
-    .blog-content {
-        flex: 0 0 calc(74% - 20px);
-        padding-right: 20px;
-
-        .blog-item {
-            width: 100%;
-        }
-    }
-
-    aside {
-        flex: 0 0 calc(25% - 20px);
-
-        &>.item {
-            border: 1px solid $grey;
-            border-radius: 5px;
-            background: white;
-            padding: 30px;
-            margin-bottom: 50px;
-            position: relative;
-
-            &:last-of-type {
-                margin-bottom: 0;
-            }
-
-            h4 {
-                color: $pink-soft;
-                text-transform: uppercase;
-                font-size: 20px;
-                font-family: $poppins;
-            }
-
-            .caption {
-                text-align: center;
-                margin-top: 10px;
-            }
-
-            .social-networks-menu {
-                margin-top: 20px;
-            }
-
-            &.postcard {
-                h4 {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%);
-                    background: rgba(255, 255, 255, 0.8);
-                    padding: 10px 20px;
-                }
-            }
-        }
-    }
-
-    @media(max-width: 992px) {
-        .blog-content {
-            padding-right: 0;
-            flex: 0 0 100%;
-        }
-
-        aside {
-            flex-basis: 100%;
-
-            &>.item {
-                .social-networks-menu {
-                    max-width: 60%;
-                    margin: 20px auto 0;
-                }
-            }
-        }
-    }
-
-    @media(max-width:992px) {
-        aside {
+    @media(max-width:992px){
+        .category-search{
             margin-bottom: 50px;
         }
     }
 }
 
+.blog-page {
+    @include container();
 
+    .blog-header {
+        height: 70vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+
+        .title {
+            position: relative;
+
+            h1 {
+                color: white;
+            }
+
+        }
+
+        .preview {
+            height: 90%;
+            width: 40%;
+            background-size: cover;
+            background-position: 75% 50%;
+            position: relative;
+        }
+    }
+
+    .quote {
+        text-transform: uppercase;
+        padding: 30px 40px;
+        border-bottom: 1px solid $grey;
+        border-top: 1px solid $grey;
+
+        .author {
+            display: block;
+            font-size: 13px;
+            text-align: center;
+            margin: 10px 0;
+            color: pink;
+        }
+    }
+
+    .image {
+        text-align: center;
+
+        img {
+            height: 600px;
+        }
+    }
+
+    .related-post {
+        margin: 50px 0;
+
+        h3 {
+            border-bottom: 1px solid $fucsia;
+        }
+
+        .little-post {
+            margin-top: 20px;
+
+            a {
+                text-decoration: none;
+
+                h4 {
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    text-align: center;
+                    margin-top: 15px;
+                }
+
+                .picture {
+                    background: rgba($color: $grey, $alpha:0.1);
+                    text-align: center;
+
+                    img {
+                        height: 300px;
+                    }
+                }
+
+                &:hover {
+                    h4 {
+                        color: $pink-soft;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 768px) {
+        .blog-header {
+            background-position: center;
+            .title {
+                h1 {
+                    text-align: center;
+                }
+            }
+            .preview {
+                display: none;
+            }
+        }
+
+        .related-post {
+            .row {
+                flex-direction: column;
+
+                .little-post {
+                    margin: 75px 0;
+                }
+            }
+        }
+    }
+
+}
+
+.contact-form{
+    width: 80%;
+    margin: 50px auto;
+    textarea{
+        width: 100%;
+        height: 350px;
+    }
+    .form-control{
+        border: none;
+        border-bottom: 1px solid $grey;
+        background: none;
+        border-radius: 0;
+    }
+}
 
 //Ends of wrapper

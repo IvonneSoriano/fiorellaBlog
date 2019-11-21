@@ -74,7 +74,10 @@ $(document).ready(function () {
     });
 
     var scene = document.getElementById('scene');
-    var parallaxInstance = new Parallax(scene);
+    if($('div').hasClass('scene')){
+
+        var parallaxInstance = new Parallax(scene);
+    }
 
     $(document).scroll(function(){
         var top = $(document).scrollTop();

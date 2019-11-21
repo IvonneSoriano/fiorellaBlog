@@ -7,11 +7,13 @@
     text-decoration: none;
     list-style: none;
 }
-body{
-    &.menu-open{
+
+body {
+    &.menu-open {
         overflow: hidden;
     }
 }
+
 h1,
 h2,
 h3 {
@@ -150,11 +152,16 @@ img {
         }
 
         &:hover {
-            width: 70px!important;
+            width: 70px !important;
         }
     }
 }
-
+.btn-solid{
+    background: $fucsia;
+    color:$pink;
+    border:none;
+    width: 100%;
+}
 .btn-container {
     position: relative;
     overflow: hidden;
@@ -171,25 +178,27 @@ img {
         outline: none;
         position: relative;
         overflow: hidden;
-        &::before{
+
+        &::before {
             content: "";
             height: 1px;
             position: absolute;
-            width:100%;
+            width: 100%;
             background: $fucsia;
             left: -100%;
-            top:0 ;
-            transition: left .5s ;
+            top: 0;
+            transition: left .5s;
         }
-        &::after{
+
+        &::after {
             content: "";
             height: 1px;
             position: absolute;
-            width:100%;
+            width: 100%;
             background: $fucsia;
-            right:-100%;
-            bottom:0 ;
-            transition: right 0.5s ;
+            right: -100%;
+            bottom: 0;
+            transition: right 0.5s;
         }
 
         .hover {
@@ -204,7 +213,7 @@ img {
                 position: absolute;
                 height: 99%;
                 content: "";
-                background:$fucsia;
+                background: $fucsia;
                 top: 0;
                 left: 0;
                 transition: opacity 0.1s, transform 0.5s 0.1s;
@@ -217,7 +226,7 @@ img {
                 position: absolute;
                 height: 100%;
                 content: "";
-                background:$fucsia;
+                background: $fucsia;
                 top: 0;
                 left: 0;
                 transition: opacity 0.1s, transform 0.5s 0.1s;
@@ -243,44 +252,51 @@ img {
                     opacity: 0;
                 }
             }
-            .text-inside{
+
+            .text-inside {
                 color: $pink;
             }
         }
     }
-    &::before{
+
+    &::before {
         content: "";
         height: 100%;
         position: absolute;
-        width:1px;
+        width: 1px;
         background: $fucsia;
         left: 0px;
-        top:100% ;
+        top: 100%;
         transition: top 0.5s;
     }
-    &::after{
+
+    &::after {
         content: "";
         height: 100%;
         position: absolute;
-        width:1px;
+        width: 1px;
         background: $fucsia;
         right: 0px;
-        bottom:100% ;
-        transition: bottom 0.5s ;
+        bottom: 100%;
+        transition: bottom 0.5s;
     }
-    &.active{
-        &::before{
-            top:0px ;
+
+    &.active {
+        &::before {
+            top: 0px;
         }
-        &::after{
-            bottom:0px ;
+
+        &::after {
+            bottom: 0px;
         }
-        .btn{
-            &::before{
-                left:0px ;
+
+        .btn {
+            &::before {
+                left: 0px;
             }
-            &::after{
-                right:0px ;
+
+            &::after {
+                right: 0px;
             }
         }
     }
@@ -430,9 +446,9 @@ img {
     .image-container {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 55%;
-            flex: 0 0 55%;
-    height: 650px;
-    position: relative;
+        flex: 0 0 55%;
+        height: 650px;
+        position: relative;
 
         .date {
             position: absolute;
@@ -470,28 +486,28 @@ img {
 
     .text-container {
         -webkit-box-flex: 0;
-    -ms-flex: 0 0 45%;
+        -ms-flex: 0 0 45%;
         flex: 0 0 45%;
-    z-index: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+        z-index: 2;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
+        flex-direction: column;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
+        -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
+        justify-content: center;
+        -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-    min-height: 250px;
-    background: white;
-    border: 1px solid $grey;
+        align-items: center;
+        position: relative;
+        min-height: 250px;
+        background: white;
+        border: 1px solid $grey;
 
         .float-content {
             position: absolute;
@@ -679,6 +695,7 @@ img {
 
     @media(max-width:576px) {
         margin-bottom: 75px;
+
         .text-container {
             min-height: 300px;
         }
@@ -1004,86 +1021,87 @@ header {
             transform: translateY(-50%);
             position: absolute;
 
-            li {
-                padding: 20px 20px 10px;
-                text-transform: uppercase;
-                font-family: $poppins;
-                letter-spacing: 1px;
-                font-size: 24px;
-                position: relative;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                cursor: pointer;
+            a {
 
-                &>a {
-                    display: inline-block;
-                    color: white;
-                    text-decoration: none;
-                }
+                text-decoration: none;
 
-                &>button {
-                    display: inline-block;
-                    width: 30px;
-                    height: 30px;
+                li {
+                    padding: 20px 20px 10px;
+                    text-transform: uppercase;
+                    font-family: $poppins;
+                    letter-spacing: 1px;
+                    font-size: 24px;
                     position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
                     cursor: pointer;
-                    border: none;
-                    background: transparent;
 
-                    span {
-                        display: block;
-                        width: 30px;
-                        height: 3px;
-                        position: absolute;
-                        top: 50%;
-                        left: 0%;
-                        background: white;
-                        transform: translateY(-50%);
-                        transition: transform 0.5s;
-                        cursor: pointer;
-
-                        &::after {
-                            position: absolute;
-                            content: "";
-                            height: 3px;
-                            width: 30px;
-                            background: white;
-                            top: 0px;
-                            left: 0;
-                            transform: rotate(70deg);
-                            opacity: 0;
-                        }
-                    }
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    height: 100%;
-                    width: 100%;
-                    left: 0;
-                    right: 0;
-                    top: 0;
-                    bottom: 0;
-                    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-                    transform: translate(-100%);
-                    transition: transform 0.5s;
-                }
-
-                &:hover {
-                    &::after {
-                        transform: translate(0);
-                    }
+                    color: white;
 
                     &>button {
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        position: relative;
+                        cursor: pointer;
+                        border: none;
+                        background: transparent;
+
                         span {
-                            transform: translateY(-50%) rotate(90deg);
+                            display: block;
+                            width: 30px;
+                            height: 3px;
+                            position: absolute;
+                            top: 50%;
+                            left: 0%;
+                            background: white;
+                            transform: translateY(-50%);
+                            transition: transform 0.5s;
+                            cursor: pointer;
 
                             &::after {
-                                opacity: 1;
-                                transform: rotate(90deg);
-                                transition: opacity .1s .5s cubic-bezier(.18, .89, .32, 1.28), transform .3s cubic-bezier(0, 0, 0.2, 1) .5s;
+                                position: absolute;
+                                content: "";
+                                height: 3px;
+                                width: 30px;
+                                background: white;
+                                top: 0px;
+                                left: 0;
+                                transform: rotate(70deg);
+                                opacity: 0;
+                            }
+                        }
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+                        transform: translate(-100%);
+                        transition: transform 0.5s;
+                    }
+
+                    &:hover {
+                        &::after {
+                            transform: translate(0);
+                        }
+
+                        &>button {
+                            span {
+                                transform: translateY(-50%) rotate(90deg);
+
+                                &::after {
+                                    opacity: 1;
+                                    transform: rotate(90deg);
+                                    transition: opacity .1s .5s cubic-bezier(.18, .89, .32, 1.28), transform .3s cubic-bezier(0, 0, 0.2, 1) .5s;
+                                }
                             }
                         }
                     }
@@ -1140,5 +1158,75 @@ header {
                 display: inline-block;
             }
         }
+    }
+}
+
+aside{
+
+    flex: 0 0 calc(25% - 20px);
+
+    &>.item {
+        border: 1px solid $grey;
+        border-radius: 5px;
+        background: white;
+        padding: 30px;
+        margin-bottom: 50px;
+        position: relative;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        h4 {
+            color: $pink-soft;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-family: $poppins;
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .social-networks-menu {
+            margin-top: 20px;
+        }
+
+        &.postcard {
+            h4 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%);
+                background: rgba(255, 255, 255, 0.8);
+                padding: 10px 20px;
+            }
+        }
+    }
+    @media(max-width: 992px) {
+            flex-basis: 100%;
+            margin-bottom: 50px;
+
+            &>.item {
+                .social-networks-menu {
+                    max-width: 60%;
+                    margin: 20px auto 0;
+                }
+            }
+        }
+}
+
+.blog-content {
+    flex: 0 0 calc(74% - 20px);
+    padding-right: 20px;
+
+    .blog-item {
+        width: 100%;
+    }
+
+    @media(max-width: 992px) {
+            padding-right: 0;
+            flex: 0 0 100%;
     }
 }
