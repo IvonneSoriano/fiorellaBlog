@@ -60,16 +60,16 @@ img {
 .container-custom {
   width: 100%;
   margin: 0 auto; }
-  @media (min-width: 1460px) {
-    .container-custom {
-      max-width: 1400px; } }
-  @media (min-width: 992px) {
-    .container-custom {
-      max-width: 1200px; } }
   @media (min-width: 768px) {
     .container-custom {
       max-width: 100%;
       padding: 0 30px; } }
+  @media (min-width: 992px) {
+    .container-custom {
+      max-width: 1200px; } }
+  @media (min-width: 1460px) {
+    .container-custom {
+      max-width: 1400px; } }
   @media (max-width: 576px) {
     .container-custom {
       max-width: 90%; } }
@@ -865,6 +865,14 @@ aside {
     .blog-content {
       padding-right: 0;
       flex: 0 0 100%; } }
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  margin-bottom: 20px; }
+  .gallery img {
+    height: 100%; }
 
 .slider-section {
   height: 100vh;

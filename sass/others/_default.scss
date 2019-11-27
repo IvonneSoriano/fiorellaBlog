@@ -71,23 +71,27 @@ img {
 .container-custom {
     width: 100%;
     margin: 0 auto;
-
-    @media(min-width:1460px) {
-        max-width: 1400px;
-    }
-
-    @media(min-width:992px) {
-        max-width: 1200px;
-    }
-
-
+ 
     @media(min-width:768px) {
         max-width: 100%;
         padding: 0 30px;
     }
+    @media(min-width:992px) {
+        max-width: 1200px;
+    }
+    @media(min-width:1460px) {
+        max-width: 1400px;
+    }
     @media(max-width:576px) {
         max-width: 90%;
     }
+
+
+   
+
+
+  
+    
 }
 
 .next-button-swiper {
@@ -1256,5 +1260,15 @@ aside{
     @media(max-width: 992px) {
             padding-right: 0;
             flex: 0 0 100%;
+    }
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    margin-bottom: 20px;
+    img{
+        height: 100%;
     }
 }
