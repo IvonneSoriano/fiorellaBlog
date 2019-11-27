@@ -1,3 +1,14 @@
+/*
+Theme Name: Fiorella
+Theme URI: https://ivonnesoriano.github.io/fiorellaBlog/
+Author: Ivonne Soriano
+Author URI: https://github.com/IvonneSoriano
+Description: Fiorella is with a little touch of pink. It has a lot of effects and responsive design.
+Version: 1.0
+Tags: right-sidebar, accessibility-ready, pink, flowers, custom-menu, custom-logo, editor-style, featured-images, post-formats theme-options
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Hind:400,700|Josefin+Sans:400,600,700|Poppins:400,600,700&display=swap");
 * {
@@ -1165,11 +1176,6 @@ aside {
       text-align: center;
       margin: 10px 0;
       color: pink; }
-  .blog-page .image {
-    text-align: center;
-    margin-bottom: 20px; }
-    .blog-page .image img {
-      height: 600px; }
   .blog-page .related-post {
     margin: 50px 0; }
     .blog-page .related-post h3 {
