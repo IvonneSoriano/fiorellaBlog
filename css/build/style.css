@@ -471,7 +471,7 @@ img {
         top: 0; }
     .blog-item .text-container {
       flex: 0 0 100%;
-      padding: 20px 0;
+      padding: 20px;
       min-height: 250px;
       position: relative; }
       .blog-item .text-container .titles,
@@ -480,6 +480,8 @@ img {
         width: 100%; }
       .blog-item .text-container .btn-container {
         margin-bottom: 20px; }
+      .blog-item .text-container .float-content {
+        padding: 30px 20px; }
     .blog-item.image-right .image-container {
       order: 1; }
       .blog-item.image-right .image-container .contai {
